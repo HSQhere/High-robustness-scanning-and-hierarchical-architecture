@@ -1,0 +1,18 @@
+add_library(qrscan_decode_wechat STATIC src/wechat_decoder.cpp)
+target_include_directories(qrscan_decode_wechat PUBLIC include ${OpenCV_INCLUDE_DIRS})
+target_link_libraries(qrscan_decode_wechat PUBLIC qrscan_common ${OpenCV_LIBS})
+option(QRSCAN_USE_OPENCV_WECHAT "Use the OpenCV contrib backend when available" ON)
+if(QRSCAN_USE_OPENCV_WECHAT AND (OpenCV_wechat_qrcode_FOUND OR TARGET opencv_wechat_qrcode))
+  target_compile_definitions(qrscan_decode_wechat PRIVATE QRSCAN_HAS_WECHAT=1)
+else()
+  message(STATUS "05_decode: building unavailable-backend stub")
+endif()
+
+add_executable(test_wechat_decode tests/test_wechat_decode.cpp)
+target_link_libraries(test_wechat_decode PRIVATE qrscan_decode_wechat)
+add_test(NAME decode_contract COMMAND test_wechat_decode)
+set(QRSCAN_WECHAT_MODEL_DIR "" CACHE PATH "External OpenCV WeChat four-file model directory")
+if(QRSCAN_WECHAT_MODEL_DIR)
+  add_test(NAME decode_model_smoke COMMAND test_wechat_decode "${QRSCAN_WECHAT_MODEL_DIR}"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../04_binarize/data/input/qr_samples/illum_glare_a000_00.png")
+endif()
