@@ -5,32 +5,32 @@
 - images: 53
 - variants: `hybrid`
 - OpenCV: 4.14.0
-- build commit: `unknown`
+- build commit: `3e08885`
 - output: 未保存逐图输出（hybrid 三路，其余变体仅二值图）
 
 ## 光照样本（n=40）
 
 | variant | fail | ambiguous | module err mean/max (px) | decode orig/eq/bin/union | p50/p95 ms |
 |---|---:|---:|---|---:|---:|
-| `hybrid` | 0 | 0 | 0.04 / 0.14 | 37/37/39/40 | 3.04 / 3.67 |
+| `hybrid` | 0 | 0 | 0.04 / 0.14 | 37/37/39/40 | 3.34 / 4.42 |
 
 ## 基础条件（n=11）
 
 | variant | fail | ambiguous | module err mean/max (px) | decode orig/eq/bin/union | p50/p95 ms |
 |---|---:|---:|---|---:|---:|
-| `hybrid` | 0 | 0 | 0.78 / 7.04 | 11/11/11/11 | 4.12 / 7.03 |
+| `hybrid` | 0 | 0 | 0.78 / 7.04 | 11/11/11/11 | 4.95 / 7.35 |
 
 ## 透视条件（n=2）
 
 | variant | fail | ambiguous | module err mean/max (px) | decode orig/eq/bin/union | p50/p95 ms |
 |---|---:|---:|---|---:|---:|
-| `hybrid` | 0 | 0 | 0.00 / 0.00 | 1/1/1/1 | 3.96 / 3.96 |
+| `hybrid` | 0 | 0 | 0.00 / 0.00 | 1/1/1/1 | 4.18 / 4.18 |
 
 ## 全部（n=53）
 
 | variant | fail | ambiguous | module err mean/max (px) | decode orig/eq/bin/union | p50/p95 ms |
 |---|---:|---:|---|---:|---:|
-| `hybrid` | 0 | 0 | 0.20 / 7.04 | 49/49/51/52 | 3.07 / 4.29 |
+| `hybrid` | 0 | 0 | 0.20 / 7.04 | 49/49/51/52 | 3.56 / 5.08 |
 
 ## 基础条件逐项模块估计（px）
 
@@ -59,5 +59,5 @@
 
 - 模块误差只在有真值的图上统计；透视条件无精确单模块真值。
 - `decode` 为三路非空文本计数；任务码合法性尚未接入。
-- `hybrid` = `canny_norm` 优先，失败/歧义/低置信度回退 `scanline`。
+- `hybrid` = 同时运行 `canny_norm` 与 `scanline`；相对差 ≤20% 时优先 Canny，分歧大时以 scanline 为准。
 - 本报告由 `qrscan_eval` 自动生成，结论需人工复核。

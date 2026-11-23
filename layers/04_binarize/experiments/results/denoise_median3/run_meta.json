@@ -1,8 +1,8 @@
 {
     "run_id": "denoise_median3",
-    "timestamp": "2026-11-23T14:15:13",
+    "timestamp": "2026-11-23T14:35:24",
     "api_version": 1,
-    "git_commit": "unknown",
+    "git_commit": "3e08885",
     "opencv_version": "4.14.0",
     "dataset": "layers/04_binarize/data/input/qr_samples",
     "manifest": "layers/04_binarize/data/input/qr_samples\\manifest.csv",
