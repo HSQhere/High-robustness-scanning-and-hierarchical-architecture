@@ -9,7 +9,6 @@
 | [`denoise_median3/`](denoise_median3/) | `hybrid` + 中值去噪 | 否 | 精度相同，额外耗时 |
 | [`denoise_bilateral/`](denoise_bilateral/) | `hybrid` + 双边去噪 | 否 | 误差变大 |
 | [`denoise_gaussian/`](denoise_gaussian/) | `hybrid` + 高斯去噪 | 否 | 掉一张解码 |
-| [`legacy_python/`](legacy_python/) | 旧 Python/OpenCV 4.10 基线 | 部分 | 只读对照，不是 C++ 结果 |
 
 ## 主结果（53 张，OpenCV 4.14，`denoise=none`）
 
@@ -46,4 +45,4 @@
                     --variants hybrid --no-save
 ```
 
-更完整的实验协议见 [`docs/04-experiments.md`](../../../docs/04-experiments.md)。
+更完整的实验协议见 [`docs/04-experiments.md`](../../../../docs/04-experiments.md)。

@@ -69,8 +69,6 @@ python experiments/finder_compare.py
 
 ## 旧实验基线（待 C++ 复核）
 
-完整报告、逐图 JSON 与拼图见 [`results/legacy_python/`](results/legacy_python/README.md)。
-
 | 数据集 | 变体 | 失败 | 模块误差 mean/max | 三路 union | p50 |
 |---|---|---:|---|---:|---:|
 | 40 光照 | scanline | 0 | 0 / 0 | 40/40 | 105–116 ms |

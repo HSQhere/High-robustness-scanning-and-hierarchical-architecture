@@ -28,7 +28,6 @@
   - `perception/tests/qrv2/qr_dynamic_illumination_demo/qr_dynamic_illumination.py`（论文主链 Python 复现）；
   - `perception/tests/qrv2/qr_dynamic_illumination_demo/experiments/finder_compare.py`（扫描线 vs Canny 对照）。
 - **不是作者官方代码**：论文未公开全部底层参数，本模块是算法级复现，不承诺逐像素一致。
-- 旧实验完整报告、逐图 JSON 与结果拼图：[`experiments/results/legacy_python/`](experiments/results/legacy_python/README.md)。
 
 ### 论文步骤与实现的对应
 
@@ -178,7 +177,6 @@ src/
 | 数据集 | 位置 | 用途 |
 |---|---|---|
 | `qr_samples` | `data/input/qr_samples/` | 53 张唯一图：40 光照 + 11 基础 + 2 透视；随仓库提交 |
-| 旧 Python 基线 | `experiments/results/legacy_python/` | 历史对照结果与拼图，只读 |
 
 当前阶段需要的图像全部在本模块内，不依赖外部路径、环境变量或数据集注册表。`data/input/qr_samples/manifest.csv` 记录文件名、类别、划分、真值和期望文本。
 
