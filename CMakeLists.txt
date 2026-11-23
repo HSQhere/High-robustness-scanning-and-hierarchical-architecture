@@ -58,6 +58,11 @@ target_link_libraries(qrscan_eval PRIVATE qrscan_binarize)
 
 enable_testing()
 
+option(QRSCAN_ENABLE_GEOMETRY "Build the native-resolution ROI crop helper" OFF)
+if(QRSCAN_ENABLE_GEOMETRY)
+  add_subdirectory(layers/02_geometry)
+endif()
+
 add_executable(test_binarize layers/04_binarize/tests/test_binarize.cpp)
 target_link_libraries(test_binarize PRIVATE qrscan_binarize)
 target_compile_definitions(test_binarize PRIVATE
