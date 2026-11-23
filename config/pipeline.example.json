@@ -1,0 +1,78 @@
+{
+  "api_version": 1,
+  "capture": {
+    "exposure_us": 8000,
+    "iso": 200,
+    "white_balance_k": 5000,
+    "brightness": 0.0,
+    "gain": 0.0
+  },
+  "roi": {
+    "detector": "yolov8n",
+    "input_size": 640,
+    "confidence_threshold": 0.35,
+    "fallback_to_full_frame": true
+  },
+  "geometry": {
+    "enable_crop": true,
+    "enable_super_resolution": false,
+    "quiet_zone_ratio": 0.08,
+    "min_roi_side": 96,
+    "max_roi_side": 1024
+  },
+  "restore": {
+    "enable_traditional_repair": true,
+    "enable_perspective_correction": true
+  },
+  "binarize": {
+    "estimator": "hybrid",
+    "denoise": "none",
+    "mean_filter_factor": 1.0,
+    "close_factor": 3.0,
+    "scale_constant": 200.0,
+    "adaptive_window_factor": 3.0,
+    "adaptive_c": 0.0,
+    "fallback_to_scanline": true,
+    "return_original": true,
+    "return_equalized": true,
+    "return_binary": true,
+    "canny": {
+      "low_threshold": 50,
+      "high_threshold": 150,
+      "close_kernel": 3,
+      "collapse_gap": 1,
+      "ratio_tolerance": 0.2,
+      "fit_error_max": 0.55,
+      "min_support": 2,
+      "min_win": 14
+    },
+    "scanline": {
+      "median_kernel": 3,
+      "scale_min": 1.25,
+      "scale_max": 100.0,
+      "fit_error_max": 0.48,
+      "bin_width_px": 0.5,
+      "adaptive_c": 3.0
+    }
+  },
+  "decode": {
+    "primary": "wechat",
+    "fallbacks": ["zxing"],
+    "max_frames": 3,
+    "try_scales": [1.0, 0.5]
+  },
+  "quality": {
+    "saturation_threshold": 0.02,
+    "dark_threshold": 0.05,
+    "missing_area_threshold": 0.15,
+    "weights": {
+      "fail": 1.0,
+      "latency": 0.3,
+      "risk": 0.8
+    }
+  },
+  "pipeline": {
+    "max_frames": 3,
+    "total_budget_ms": 0
+  }
+}

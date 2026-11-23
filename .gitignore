@@ -1,0 +1,70 @@
+# ---- 构建产物 ----
+build/
+build-*/
+out/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+*.pdb
+
+# ---- IDE / 编辑器 ----
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# ---- 本地 agent / 工具配置 ----
+.serena/
+.zcode/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ---- 运行输出与临时文件 ----
+**/data/output/*
+!**/data/output/README.md
+!**/data/output/.gitkeep
+**/dataset_output/
+**/dataset_report/
+**/.tmp/
+**/logs/
+*.log
+
+# ---- 大文件：数据集与视频不进普通 Git ----
+*.avi
+*.mp4
+*.mkv
+*.mov
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# ---- 模型权重：用 Git LFS 或发布包 ----
+models/**/*.onnx
+models/**/*.engine
+models/**/*.plan
+models/**/*.caffemodel
+models/**/*.weights
+models/**/*.pt
+models/**/*.pth
+models/**/*.tflite
+
+# ---- 系统文件 ----
+.DS_Store
+Thumbs.db
+desktop.ini

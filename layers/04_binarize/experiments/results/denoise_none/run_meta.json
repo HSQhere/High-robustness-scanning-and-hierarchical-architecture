@@ -1,0 +1,15 @@
+{
+    "run_id": "denoise_none",
+    "timestamp": "2026-11-23T14:13:50",
+    "api_version": 1,
+    "git_commit": "unknown",
+    "opencv_version": "4.14.0",
+    "dataset": "layers/04_binarize/data/input/qr_samples",
+    "manifest": "layers/04_binarize/data/input/qr_samples\\manifest.csv",
+    "image_count": 53,
+    "variants": [
+        "hybrid"
+    ],
+    "save_outputs": 0,
+    "save_all": 0
+}

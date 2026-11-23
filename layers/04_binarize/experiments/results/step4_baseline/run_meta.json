@@ -1,0 +1,20 @@
+{
+    "run_id": "step4_baseline",
+    "timestamp": "2026-11-23T14:19:26",
+    "api_version": 1,
+    "git_commit": "unknown",
+    "opencv_version": "4.14.0",
+    "dataset": "layers/04_binarize/data/input/qr_samples",
+    "manifest": "layers/04_binarize/data/input/qr_samples\\manifest.csv",
+    "image_count": 53,
+    "variants": [
+        "scanline",
+        "canny_strict",
+        "canny_norm",
+        "canny_norm_round",
+        "canny_relaxed",
+        "hybrid"
+    ],
+    "save_outputs": 1,
+    "save_all": 0
+}

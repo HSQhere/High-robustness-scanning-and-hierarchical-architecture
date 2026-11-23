@@ -1,0 +1,1812 @@
+{
+    "run_id": "denoise_bilateral",
+    "dataset": "layers/04_binarize/data/input/qr_samples",
+    "image_count": 53,
+    "variants": [
+        "hybrid"
+    ],
+    "summary": {
+        "all": {
+            "hybrid": {
+                "n": 53,
+                "fail": 0,
+                "ambiguous": 0,
+                "with_gt": 51,
+                "error_mean": 0.19791682826976933,
+                "error_max": 7.0375384615384622,
+                "le_0_5": 49,
+                "le_1": 49,
+                "p50_ms": 3.0722999999999998,
+                "p95_ms": 4.2866999999999997,
+                "scale_p50_ms": 2.2149999999999999,
+                "decode": {
+                    "original": 49,
+                    "equalized": 49,
+                    "binary": 51,
+                    "union": 52
+                },
+                "expected": {
+                    "original": 49,
+                    "equalized": 49,
+                    "binary": 51
+                }
+            }
+        },
+        "core": {
+            "hybrid": {
+                "n": 11,
+                "fail": 0,
+                "ambiguous": 0,
+                "with_gt": 11,
+                "error_mean": 0.78125074925074922,
+                "error_max": 7.0375384615384622,
+                "le_0_5": 9,
+                "le_1": 9,
+                "p50_ms": 4.1227,
+                "p95_ms": 7.0347999999999997,
+                "scale_p50_ms": 2.9047999999999998,
+                "decode": {
+                    "original": 11,
+                    "equalized": 11,
+                    "binary": 11,
+                    "union": 11
+                },
+                "expected": {
+                    "original": 11,
+                    "equalized": 11,
+                    "binary": 11
+                }
+            }
+        },
+        "illum": {
+            "hybrid": {
+                "n": 40,
+                "fail": 0,
+                "ambiguous": 0,
+                "with_gt": 40,
+                "error_mean": 0.037499999999999867,
+                "error_max": 0.14285714285714235,
+                "le_0_5": 40,
+                "le_1": 40,
+                "p50_ms": 3.0421999999999998,
+                "p95_ms": 3.6734,
+                "scale_p50_ms": 2.1745999999999999,
+                "decode": {
+                    "original": 37,
+                    "equalized": 37,
+                    "binary": 39,
+                    "union": 40
+                },
+                "expected": {
+                    "original": 37,
+                    "equalized": 37,
+                    "binary": 39
+                }
+            }
+        },
+        "persp": {
+            "hybrid": {
+                "n": 2,
+                "fail": 0,
+                "ambiguous": 0,
+                "with_gt": 0,
+                "error_mean": 0.0,
+                "error_max": 0.0,
+                "le_0_5": 0,
+                "le_1": 0,
+                "p50_ms": 3.9561999999999999,
+                "p95_ms": 3.9561999999999999,
+                "scale_p50_ms": 2.9066999999999998,
+                "decode": {
+                    "original": 1,
+                    "equalized": 1,
+                    "binary": 1,
+                    "union": 1
+                },
+                "expected": {
+                    "original": 1,
+                    "equalized": 1,
+                    "binary": 1
+                }
+            }
+        }
+    },
+    "files": [
+        {
+            "file": "blur_1_00.png",
+            "category": "blur",
+            "split": "tune_core",
+            "condition": "blur_1",
+            "gt_module_px": 9.5999999999999996,
+            "variants": {
+                "hybrid": {
+                    "module_px": 9.7692307692307701,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 213,
+                    "candidates": 1489,
+                    "fit_error": 0.18947368421052629,
+                    "confidence": 0.80263157894736847,
+                    "total_ms": 4.6078999999999999,
+                    "scale_ms": 3.1015000000000001,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.73469387755102045,
+                        "dark_ratio": 0.11442389455782313,
+                        "illumination_cv": 0.094460489321543356,
+                        "sharpness": 326.63743622448987
+                    }
+                }
+            }
+        },
+        {
+            "file": "blur_2_00.png",
+            "category": "blur",
+            "split": "tune_core",
+            "condition": "blur_2",
+            "gt_module_px": 9.5999999999999996,
+            "variants": {
+                "hybrid": {
+                    "module_px": 9.5714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 242,
+                    "candidates": 1095,
+                    "fit_error": 0.029850746268656719,
+                    "confidence": 0.92537313432835822,
+                    "total_ms": 4.1227,
+                    "scale_ms": 2.9047999999999998,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.65867701247165533,
+                        "dark_ratio": 0.043482497165532881,
+                        "illumination_cv": 0.11434445487050272,
+                        "sharpness": 48.003472222222221
+                    }
+                }
+            }
+        },
+        {
+            "file": "clean_200_00.png",
+            "category": "clean",
+            "split": "tune_core",
+            "condition": "clean_200",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 231,
+                    "candidates": 502,
+                    "fit_error": 0.025586353944562878,
+                    "confidence": 0.9360341151385928,
+                    "total_ms": 3.5240999999999998,
+                    "scale_ms": 2.4863,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.81061224489795913,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.067379748142981311,
+                        "sharpness": 6777.8609693877543
+                    }
+                }
+            }
+        },
+        {
+            "file": "clean_320_00.png",
+            "category": "clean",
+            "split": "tune_core",
+            "condition": "clean_320",
+            "gt_module_px": 12.800000000000001,
+            "variants": {
+                "hybrid": {
+                    "module_px": 12.857142857142858,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 314,
+                    "candidates": 914,
+                    "fit_error": 0.019734660033167511,
+                    "confidence": 0.95066334991708124,
+                    "total_ms": 7.0347999999999997,
+                    "scale_ms": 4.8525,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.80952547034438771,
+                        "dark_ratio": 0.19047452965561223,
+                        "illumination_cv": 0.057301357578631112,
+                        "sharpness": 4117.1959701849482
+                    }
+                }
+            }
+        },
+        {
+            "file": "dim_140_00.png",
+            "category": "dim",
+            "split": "tune_core",
+            "condition": "dim_140",
+            "gt_module_px": 9.5999999999999996,
+            "variants": {
+                "hybrid": {
+                    "module_px": 9.5714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 286,
+                    "candidates": 850,
+                    "fit_error": 0.029850746268656719,
+                    "confidence": 0.92537313432835822,
+                    "total_ms": 3.9045000000000001,
+                    "scale_ms": 2.7942,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.32109197845804988,
+                        "dark_ratio": 0.18911210317460317,
+                        "illumination_cv": 0.25924918110683487,
+                        "sharpness": 5794.3549815759643
+                    }
+                }
+            }
+        },
+        {
+            "file": "dim_90_00.png",
+            "category": "dim",
+            "split": "tune_core",
+            "condition": "dim_90",
+            "gt_module_px": 9.5999999999999996,
+            "variants": {
+                "hybrid": {
+                    "module_px": 9.5714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 286,
+                    "candidates": 819,
+                    "fit_error": 0.029850746268656719,
+                    "confidence": 0.92537313432835822,
+                    "total_ms": 3.8203999999999998,
+                    "scale_ms": 2.6303000000000001,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.32109197845804988,
+                        "dark_ratio": 0.18911210317460317,
+                        "illumination_cv": 0.43859233547848792,
+                        "sharpness": 6033.4422831632646
+                    }
+                }
+            }
+        },
+        {
+            "file": "far_120_00.png",
+            "category": "far",
+            "split": "tune_core",
+            "condition": "far_120",
+            "gt_module_px": 4.7999999999999998,
+            "variants": {
+                "hybrid": {
+                    "module_px": 4.8571428571428568,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 113,
+                    "candidates": 339,
+                    "fit_error": 0.06232753237859287,
+                    "confidence": 0.84418116905351781,
+                    "total_ms": 1.4508000000000001,
+                    "scale_ms": 1.2173,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.80764597505668934,
+                        "dark_ratio": 0.19235402494331066,
+                        "illumination_cv": 0.054328631159260753,
+                        "sharpness": 11878.858418367347
+                    }
+                }
+            }
+        },
+        {
+            "file": "far_80_00.png",
+            "category": "far",
+            "split": "tune_core",
+            "condition": "far_80",
+            "gt_module_px": 3.2000000000000002,
+            "variants": {
+                "hybrid": {
+                    "module_px": 3.1428571428571428,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 72,
+                    "candidates": 176,
+                    "fit_error": 0.055483452303698902,
+                    "confidence": 0.86129136924075278,
+                    "total_ms": 0.96379999999999999,
+                    "scale_ms": 0.8226,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.83513888888888888,
+                        "dark_ratio": 0.16486111111111112,
+                        "illumination_cv": 0.092034328728319265,
+                        "sharpness": 16418.812499999996
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_glare_a000_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_glare_a000",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 219,
+                    "candidates": 802,
+                    "fit_error": 0.040285299167877431,
+                    "confidence": 0.8992867520803064,
+                    "total_ms": 3.1196000000000002,
+                    "scale_ms": 2.1745999999999999,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.087742346938775514,
+                        "dark_ratio": 0.049387755102040819,
+                        "illumination_cv": 0.12487174546143046,
+                        "sharpness": 2937.0873445960024
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_glare_a045_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_glare_a045",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 225,
+                    "candidates": 776,
+                    "fit_error": 0.043443496801705783,
+                    "confidence": 0.89139125799573549,
+                    "total_ms": 3.4262999999999999,
+                    "scale_ms": 2.4554999999999998,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.082091836734693877,
+                        "dark_ratio": 0.049821428571428572,
+                        "illumination_cv": 0.12466681203224524,
+                        "sharpness": 2927.7097682189715
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_glare_a090_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_glare_a090",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 222,
+                    "candidates": 789,
+                    "fit_error": 0.040285299167877431,
+                    "confidence": 0.8992867520803064,
+                    "total_ms": 3.1511,
+                    "scale_ms": 2.2395999999999998,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.083801020408163271,
+                        "dark_ratio": 0.047117346938775513,
+                        "illumination_cv": 0.11909308186416749,
+                        "sharpness": 2958.6138752082466
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_glare_a135_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_glare_a135",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 225,
+                    "candidates": 697,
+                    "fit_error": 0.042469470827679767,
+                    "confidence": 0.89382632293080055,
+                    "total_ms": 3.1265000000000001,
+                    "scale_ms": 2.3098999999999998,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.077908163265306127,
+                        "dark_ratio": 0.046696428571428569,
+                        "illumination_cv": 0.12076566704402991,
+                        "sharpness": 2962.358390667951
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_glare_a180_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_glare_a180",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 244,
+                    "candidates": 809,
+                    "fit_error": 0.040285299167877431,
+                    "confidence": 0.8992867520803064,
+                    "total_ms": 3.0882000000000001,
+                    "scale_ms": 2.2054,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.082691326530612244,
+                        "dark_ratio": 0.046836734693877551,
+                        "illumination_cv": 0.11764016661745738,
+                        "sharpness": 2980.1042833715119
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_glare_a225_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_glare_a225",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 221,
+                    "candidates": 717,
+                    "fit_error": 0.066367193160411536,
+                    "confidence": 0.83408201709897112,
+                    "total_ms": 3.5558999999999998,
+                    "scale_ms": 2.5506000000000002,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.077142857142857138,
+                        "dark_ratio": 0.050331632653061224,
+                        "illumination_cv": 0.12058685010716916,
+                        "sharpness": 2938.0683651577469
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_glare_a270_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_glare_a270",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 245,
+                    "candidates": 777,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 3.7561,
+                    "scale_ms": 2.9487000000000001,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.085510204081632651,
+                        "dark_ratio": 0.051071428571428573,
+                        "illumination_cv": 0.12209562158495534,
+                        "sharpness": 2873.2217578613086
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_glare_a315_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_glare_a315",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 220,
+                    "candidates": 737,
+                    "fit_error": 0.040285299167877431,
+                    "confidence": 0.8992867520803064,
+                    "total_ms": 3.4243999999999999,
+                    "scale_ms": 2.4908000000000001,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.083405612244897953,
+                        "dark_ratio": 0.050471938775510206,
+                        "illumination_cv": 0.12733471984006467,
+                        "sharpness": 2836.3912478108082
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_glare_hard_a000_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_glare_hard_a000",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 227,
+                    "candidates": 697,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 3.6734,
+                    "scale_ms": 2.8690000000000002,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.068966836734693879,
+                        "dark_ratio": 0.038724489795918367,
+                        "illumination_cv": 0.20083665464664011,
+                        "sharpness": 1880.998570051541
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_glare_hard_a045_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_glare_hard_a045",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 185,
+                    "candidates": 752,
+                    "fit_error": 0.043443496801705783,
+                    "confidence": 0.89139125799573549,
+                    "total_ms": 4.1310000000000002,
+                    "scale_ms": 3.1613000000000002,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.062232142857142854,
+                        "dark_ratio": 0.036594387755102042,
+                        "illumination_cv": 0.19774176151905662,
+                        "sharpness": 1893.4953818096631
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_glare_hard_a090_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_glare_hard_a090",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 234,
+                    "candidates": 721,
+                    "fit_error": 0.040285299167877431,
+                    "confidence": 0.8992867520803064,
+                    "total_ms": 3.0177999999999998,
+                    "scale_ms": 2.2149999999999999,
+                    "decode": {
+                        "original": 0,
+                        "equalized": 0,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.063673469387755102,
+                        "dark_ratio": 0.039770408163265304,
+                        "illumination_cv": 0.19844089008774865,
+                        "sharpness": 1901.0576006637862
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_glare_hard_a135_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_glare_hard_a135",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 193,
+                    "candidates": 687,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 3.0091999999999999,
+                    "scale_ms": 2.1842000000000001,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 0,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.057729591836734692,
+                        "dark_ratio": 0.038163265306122449,
+                        "illumination_cv": 0.19824213853653588,
+                        "sharpness": 1923.0499226259894
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_glare_hard_a180_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_glare_hard_a180",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 237,
+                    "candidates": 726,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 2.9525000000000001,
+                    "scale_ms": 2.0954999999999999,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.063303571428571431,
+                        "dark_ratio": 0.037742346938775512,
+                        "illumination_cv": 0.19907643099413577,
+                        "sharpness": 1914.9101771943979
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_glare_hard_a225_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_glare_hard_a225",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 196,
+                    "candidates": 692,
+                    "fit_error": 0.063361682215940338,
+                    "confidence": 0.8415957944601492,
+                    "total_ms": 3.3712,
+                    "scale_ms": 2.4636999999999998,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.056951530612244901,
+                        "dark_ratio": 0.03760204081632653,
+                        "illumination_cv": 0.19586143238521828,
+                        "sharpness": 1906.747703238234
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_glare_hard_a270_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_glare_hard_a270",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 225,
+                    "candidates": 691,
+                    "fit_error": 0.040828693050814865,
+                    "confidence": 0.89792826737296283,
+                    "total_ms": 3.1738,
+                    "scale_ms": 2.2976000000000001,
+                    "decode": {
+                        "original": 0,
+                        "equalized": 0,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.065229591836734699,
+                        "dark_ratio": 0.039948979591836735,
+                        "illumination_cv": 0.20001821186308963,
+                        "sharpness": 1834.3122180107248
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_glare_hard_a315_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_glare_hard_a315",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 215,
+                    "candidates": 642,
+                    "fit_error": 0.039179104477611942,
+                    "confidence": 0.90205223880597019,
+                    "total_ms": 2.9552999999999998,
+                    "scale_ms": 2.1695000000000002,
+                    "decode": {
+                        "original": 0,
+                        "equalized": 0,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.062716836734693873,
+                        "dark_ratio": 0.038252551020408164,
+                        "illumination_cv": 0.2017689349920937,
+                        "sharpness": 1840.9942593606829
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_grad_a000_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_grad_a000",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 236,
+                    "candidates": 597,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 3.0699999999999998,
+                    "scale_ms": 2.1920999999999999,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.028571428571428571,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.33868162268751795,
+                        "sharpness": 2832.4789158163267
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_grad_a045_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_grad_a045",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 241,
+                    "candidates": 594,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 3.0495000000000001,
+                    "scale_ms": 2.0225,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.054566326530612247,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.33318662773684204,
+                        "sharpness": 2879.0464531907278
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_grad_a090_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_grad_a090",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 234,
+                    "candidates": 573,
+                    "fit_error": 0.028910834575542013,
+                    "confidence": 0.927722913561145,
+                    "total_ms": 3.0722999999999998,
+                    "scale_ms": 2.2648999999999999,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.028571428571428571,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.34021512924552066,
+                        "sharpness": 2922.1515178571431
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_grad_a135_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_grad_a135",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 246,
+                    "candidates": 612,
+                    "fit_error": 0.043443496801705783,
+                    "confidence": 0.89139125799573549,
+                    "total_ms": 3.0546000000000002,
+                    "scale_ms": 2.0960999999999999,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.054566326530612247,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.33531850185722745,
+                        "sharpness": 2938.8319123744013
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_grad_a180_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_grad_a180",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 241,
+                    "candidates": 585,
+                    "fit_error": 0.036871563236449342,
+                    "confidence": 0.90782109190887672,
+                    "total_ms": 2.6764000000000001,
+                    "scale_ms": 1.8459000000000001,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.028571428571428571,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.34088336810496728,
+                        "sharpness": 2905.6820280612251
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_grad_a225_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_grad_a225",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 248,
+                    "candidates": 608,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 3.0981000000000001,
+                    "scale_ms": 1.9984999999999999,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.054566326530612247,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.33456991563106492,
+                        "sharpness": 2861.6732133948094
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_grad_a270_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_grad_a270",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 245,
+                    "candidates": 583,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 2.8399000000000001,
+                    "scale_ms": 1.8072999999999999,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.028571428571428571,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.33953094020450114,
+                        "sharpness": 2824.0388647959189
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_grad_a315_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_grad_a315",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 253,
+                    "candidates": 605,
+                    "fit_error": 0.043443496801705783,
+                    "confidence": 0.89139125799573549,
+                    "total_ms": 2.5880000000000001,
+                    "scale_ms": 1.7709999999999999,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.054566326530612247,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.3331340721971493,
+                        "sharpness": 2816.7797184968504
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_mix_a000_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_mix_a000",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 225,
+                    "candidates": 695,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 3.2206000000000001,
+                    "scale_ms": 2.5379,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.056339285714285717,
+                        "dark_ratio": 0.047512755102040817,
+                        "illumination_cv": 0.34632867650219418,
+                        "sharpness": 1646.0083576608704
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_mix_a045_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_mix_a045",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 244,
+                    "candidates": 673,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 2.8942000000000001,
+                    "scale_ms": 2.1413000000000002,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.048533163265306122,
+                        "dark_ratio": 0.051262755102040813,
+                        "illumination_cv": 0.34863437573593653,
+                        "sharpness": 1665.9196417091839
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_mix_a090_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_mix_a090",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 207,
+                    "candidates": 689,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 2.5996999999999999,
+                    "scale_ms": 1.6245000000000001,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.057576530612244901,
+                        "dark_ratio": 0.051798469387755099,
+                        "illumination_cv": 0.35076172005786077,
+                        "sharpness": 1645.5415974567891
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_mix_a135_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_mix_a135",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 248,
+                    "candidates": 704,
+                    "fit_error": 0.043443496801705783,
+                    "confidence": 0.89139125799573549,
+                    "total_ms": 2.7542,
+                    "scale_ms": 1.8181,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.051772959183673473,
+                        "dark_ratio": 0.051173469387755105,
+                        "illumination_cv": 0.35425226023764761,
+                        "sharpness": 1638.1806110969385
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_mix_a180_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_mix_a180",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 238,
+                    "candidates": 687,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 2.8298999999999999,
+                    "scale_ms": 1.8138000000000001,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.063035714285714292,
+                        "dark_ratio": 0.050293367346938775,
+                        "illumination_cv": 0.35257330037829898,
+                        "sharpness": 1680.5441484771973
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_mix_a225_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_mix_a225",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 231,
+                    "candidates": 686,
+                    "fit_error": 0.039179104477611942,
+                    "confidence": 0.90205223880597019,
+                    "total_ms": 2.6735000000000002,
+                    "scale_ms": 1.7334000000000001,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.05260204081632653,
+                        "dark_ratio": 0.050535714285714288,
+                        "illumination_cv": 0.35368822754468249,
+                        "sharpness": 1648.0474988520411
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_mix_a270_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_mix_a270",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 221,
+                    "candidates": 701,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 2.8826999999999998,
+                    "scale_ms": 2.0674999999999999,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.057551020408163268,
+                        "dark_ratio": 0.047882653061224488,
+                        "illumination_cv": 0.34846336722885768,
+                        "sharpness": 1626.8414699057682
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_mix_a315_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_mix_a315",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 234,
+                    "candidates": 681,
+                    "fit_error": 0.040285299167877431,
+                    "confidence": 0.8992867520803064,
+                    "total_ms": 3.0975999999999999,
+                    "scale_ms": 2.2854000000000001,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.04732142857142857,
+                        "dark_ratio": 0.047308673469387753,
+                        "illumination_cv": 0.34818238732478191,
+                        "sharpness": 1642.9992080357144
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_shadow_a000_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_shadow_a000",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 241,
+                    "candidates": 598,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 2.9853000000000001,
+                    "scale_ms": 2.2197,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.07857142857142857,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.3022617405265059,
+                        "sharpness": 3262.9017337040559
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_shadow_a045_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_shadow_a045",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 223,
+                    "candidates": 607,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 2.6556999999999999,
+                    "scale_ms": 1.8361000000000001,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.080714285714285711,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.30350709391683767,
+                        "sharpness": 3341.4597668445435
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_shadow_a090_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_shadow_a090",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 237,
+                    "candidates": 578,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 2.6566000000000001,
+                    "scale_ms": 1.7333000000000001,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.07857142857142857,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.30663659874706123,
+                        "sharpness": 3402.5203051326275
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_shadow_a135_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_shadow_a135",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 233,
+                    "candidates": 632,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 2.5672000000000001,
+                    "scale_ms": 1.6990000000000001,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.080714285714285711,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.30509627963048908,
+                        "sharpness": 3408.4638994976058
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_shadow_a180_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_shadow_a180",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 243,
+                    "candidates": 597,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 2.5118,
+                    "scale_ms": 1.7612000000000001,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.07857142857142857,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.30393009752294653,
+                        "sharpness": 3398.712728602015
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_shadow_a225_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_shadow_a225",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.0714285714285712,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 242,
+                    "candidates": 638,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 2.2967,
+                    "scale_ms": 1.609,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.080714285714285711,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.30603492702677926,
+                        "sharpness": 3309.4230576608711
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_shadow_a270_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_shadow_a270",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.1428571428571423,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 238,
+                    "candidates": 597,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 2.4346000000000001,
+                    "scale_ms": 1.8143,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.07857142857142857,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.30359189724133312,
+                        "sharpness": 3221.7486469693622
+                    }
+                }
+            }
+        },
+        {
+            "file": "illum_shadow_a315_00.png",
+            "category": "illum",
+            "split": "tune_illum",
+            "condition": "illum_shadow_a315",
+            "gt_module_px": 8.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 8.1428571428571423,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 227,
+                    "candidates": 616,
+                    "fit_error": 0.0413720869337523,
+                    "confidence": 0.89656978266561926,
+                    "total_ms": 3.0421999999999998,
+                    "scale_ms": 2.2953999999999999,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.080714285714285711,
+                        "dark_ratio": 0.18938775510204081,
+                        "illumination_cv": 0.30402469162868345,
+                        "sharpness": 3182.8981086812787
+                    }
+                }
+            }
+        },
+        {
+            "file": "persp_15_00.png",
+            "category": "persp",
+            "split": "behavior_persp",
+            "condition": "persp_15",
+            "gt_module_px": -1.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 7.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 143,
+                    "candidates": 1355,
+                    "fit_error": 0.35316077650572431,
+                    "confidence": 0.63212419113987051,
+                    "total_ms": 3.9561999999999999,
+                    "scale_ms": 2.9066999999999998,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.85619508219954643,
+                        "dark_ratio": 0.11667375283446713,
+                        "illumination_cv": 0.069583900620768815,
+                        "sharpness": 2646.8160076530608
+                    }
+                }
+            }
+        },
+        {
+            "file": "persp_30_00.png",
+            "category": "persp",
+            "split": "behavior_persp",
+            "condition": "persp_30",
+            "gt_module_px": -1.0,
+            "variants": {
+                "hybrid": {
+                    "module_px": 2.1538461538461537,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 35,
+                    "candidates": 267,
+                    "fit_error": 0.31111111111111112,
+                    "confidence": 0.67592592592592593,
+                    "total_ms": 3.2471999999999999,
+                    "scale_ms": 2.4476,
+                    "decode": {
+                        "original": 0,
+                        "equalized": 0,
+                        "binary": 0,
+                        "union": 0
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.94097222222222221,
+                        "dark_ratio": 0.047397604875283446,
+                        "illumination_cv": 0.16452189681983076,
+                        "sharpness": 5194.4003684807267
+                    }
+                }
+            }
+        },
+        {
+            "file": "rot_15_00.png",
+            "category": "rot",
+            "split": "tune_core",
+            "condition": "rot_15",
+            "gt_module_px": 9.9390000000000001,
+            "variants": {
+                "hybrid": {
+                    "module_px": 10.0,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 199,
+                    "candidates": 1784,
+                    "fit_error": 0.29411764705882348,
+                    "confidence": 0.69362745098039214,
+                    "total_ms": 4.2866999999999997,
+                    "scale_ms": 3.2749000000000001,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.79180839002267578,
+                        "dark_ratio": 0.17018317743764172,
+                        "illumination_cv": 0.068176176346922412,
+                        "sharpness": 3140.4714781746034
+                    }
+                }
+            }
+        },
+        {
+            "file": "rot_30_00.png",
+            "category": "rot",
+            "split": "tune_core",
+            "condition": "rot_30",
+            "gt_module_px": 11.085000000000001,
+            "variants": {
+                "hybrid": {
+                    "module_px": 12.153846153846153,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 289,
+                    "candidates": 1716,
+                    "fit_error": 0.34509803921568633,
+                    "confidence": 0.64052287581699341,
+                    "total_ms": 4.6277999999999997,
+                    "scale_ms": 3.4969999999999999,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.79175524376417239,
+                        "dark_ratio": 0.17016546201814059,
+                        "illumination_cv": 0.081795431637930363,
+                        "sharpness": 4032.0944586167798
+                    }
+                }
+            }
+        },
+        {
+            "file": "rot_45_00.png",
+            "category": "rot",
+            "split": "tune_core",
+            "condition": "rot_45",
+            "gt_module_px": 13.576000000000001,
+            "variants": {
+                "hybrid": {
+                    "module_px": 6.5384615384615383,
+                    "fail": 0,
+                    "ambiguous": 0,
+                    "support": 167,
+                    "candidates": 1851,
+                    "fit_error": 0.22988505747126436,
+                    "confidence": 0.76053639846743293,
+                    "total_ms": 4.1683000000000003,
+                    "scale_ms": 3.2164999999999999,
+                    "decode": {
+                        "original": 1,
+                        "equalized": 1,
+                        "binary": 1,
+                        "union": 1
+                    },
+                    "quality": {
+                        "saturation_ratio": 0.78951424319727892,
+                        "dark_ratio": 0.16528486394557823,
+                        "illumination_cv": 0.10874991837145657,
+                        "sharpness": 4785.0269982993204
+                    }
+                }
+            }
+        }
+    ]
+}

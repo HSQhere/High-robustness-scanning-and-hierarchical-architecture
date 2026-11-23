@@ -1,0 +1,13 @@
+{
+  "estimator": "hybrid",
+  "canny_variant": "norm",
+  "denoise": "bilateral",
+  "mean_filter_factor": 1.0,
+  "close_factor": 3.0,
+  "scale_constant": 200.0,
+  "adaptive_window_factor": 3.0,
+  "adaptive_c": 0.0,
+  "return_original": true,
+  "return_equalized": true,
+  "return_binary": true
+}

@@ -1,0 +1,1336 @@
+{
+  "generated": "2026-11-19",
+  "dataset": "F:\\Kiruno's Perfect Arithmetic Classroom\\perception\\database\\qr\\qr_samples",
+  "pattern": "illum_*.png",
+  "expected_text": [
+    "156+123+516+231"
+  ],
+  "file_count": 40,
+  "module_px_override": null,
+  "per_category": {
+    "shadow": {
+      "n": 8,
+      "original": 8,
+      "equalized": 8,
+      "binary": 8
+    },
+    "glare": {
+      "n": 8,
+      "original": 8,
+      "equalized": 8,
+      "binary": 8
+    },
+    "glare_hard": {
+      "n": 8,
+      "original": 5,
+      "equalized": 7,
+      "binary": 7
+    },
+    "grad": {
+      "n": 8,
+      "original": 8,
+      "equalized": 8,
+      "binary": 8
+    },
+    "mix": {
+      "n": 8,
+      "original": 8,
+      "equalized": 8,
+      "binary": 8
+    }
+  },
+  "overall": {
+    "n": 40,
+    "original": 37,
+    "equalized": 39,
+    "binary": 39
+  },
+  "timing_ms": {
+    "estimate_p50": 128.97,
+    "estimate_p95": 176.663,
+    "pipeline_p50": 0.643,
+    "pipeline_p95": 1.202
+  },
+  "files": [
+    {
+      "file": "illum_glare_a000_00.png",
+      "category": "glare",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 169.797,
+        "equalize_and_binarize": 1.1
+      }
+    },
+    {
+      "file": "illum_glare_a045_00.png",
+      "category": "glare",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 169.799,
+        "equalize_and_binarize": 0.868
+      }
+    },
+    {
+      "file": "illum_glare_a090_00.png",
+      "category": "glare",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 165.613,
+        "equalize_and_binarize": 0.803
+      }
+    },
+    {
+      "file": "illum_glare_a135_00.png",
+      "category": "glare",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 171.577,
+        "equalize_and_binarize": 1.198
+      }
+    },
+    {
+      "file": "illum_glare_a180_00.png",
+      "category": "glare",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 159.709,
+        "equalize_and_binarize": 1.308
+      }
+    },
+    {
+      "file": "illum_glare_a225_00.png",
+      "category": "glare",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 162.906,
+        "equalize_and_binarize": 1.276
+      }
+    },
+    {
+      "file": "illum_glare_a270_00.png",
+      "category": "glare",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 171.051,
+        "equalize_and_binarize": 1.042
+      }
+    },
+    {
+      "file": "illum_glare_a315_00.png",
+      "category": "glare",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 164.443,
+        "equalize_and_binarize": 1.035
+      }
+    },
+    {
+      "file": "illum_glare_hard_a000_00.png",
+      "category": "glare_hard",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 182.231,
+        "equalize_and_binarize": 0.642
+      }
+    },
+    {
+      "file": "illum_glare_hard_a045_00.png",
+      "category": "glare_hard",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 168.923,
+        "equalize_and_binarize": 1.148
+      }
+    },
+    {
+      "file": "illum_glare_hard_a090_00.png",
+      "category": "glare_hard",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": false,
+          "text": ""
+        },
+        "equalized": {
+          "success": false,
+          "text": ""
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 176.392,
+        "equalize_and_binarize": 0.791
+      }
+    },
+    {
+      "file": "illum_glare_hard_a135_00.png",
+      "category": "glare_hard",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": false,
+          "text": ""
+        }
+      },
+      "timing_ms": {
+        "estimate": 181.796,
+        "equalize_and_binarize": 0.735
+      }
+    },
+    {
+      "file": "illum_glare_hard_a180_00.png",
+      "category": "glare_hard",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 162.061,
+        "equalize_and_binarize": 0.667
+      }
+    },
+    {
+      "file": "illum_glare_hard_a225_00.png",
+      "category": "glare_hard",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 163.374,
+        "equalize_and_binarize": 0.69
+      }
+    },
+    {
+      "file": "illum_glare_hard_a270_00.png",
+      "category": "glare_hard",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": false,
+          "text": ""
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 174.524,
+        "equalize_and_binarize": 0.717
+      }
+    },
+    {
+      "file": "illum_glare_hard_a315_00.png",
+      "category": "glare_hard",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": false,
+          "text": ""
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 173.554,
+        "equalize_and_binarize": 0.584
+      }
+    },
+    {
+      "file": "illum_grad_a000_00.png",
+      "category": "grad",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 108.992,
+        "equalize_and_binarize": 0.642
+      }
+    },
+    {
+      "file": "illum_grad_a045_00.png",
+      "category": "grad",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 118.514,
+        "equalize_and_binarize": 0.597
+      }
+    },
+    {
+      "file": "illum_grad_a090_00.png",
+      "category": "grad",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 112.286,
+        "equalize_and_binarize": 0.62
+      }
+    },
+    {
+      "file": "illum_grad_a135_00.png",
+      "category": "grad",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 147.935,
+        "equalize_and_binarize": 0.617
+      }
+    },
+    {
+      "file": "illum_grad_a180_00.png",
+      "category": "grad",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 142.483,
+        "equalize_and_binarize": 0.584
+      }
+    },
+    {
+      "file": "illum_grad_a225_00.png",
+      "category": "grad",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 114.417,
+        "equalize_and_binarize": 0.639
+      }
+    },
+    {
+      "file": "illum_grad_a270_00.png",
+      "category": "grad",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 113.942,
+        "equalize_and_binarize": 0.578
+      }
+    },
+    {
+      "file": "illum_grad_a315_00.png",
+      "category": "grad",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 116.373,
+        "equalize_and_binarize": 0.648
+      }
+    },
+    {
+      "file": "illum_mix_a000_00.png",
+      "category": "mix",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 111.912,
+        "equalize_and_binarize": 0.585
+      }
+    },
+    {
+      "file": "illum_mix_a045_00.png",
+      "category": "mix",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 121.587,
+        "equalize_and_binarize": 0.617
+      }
+    },
+    {
+      "file": "illum_mix_a090_00.png",
+      "category": "mix",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 115.763,
+        "equalize_and_binarize": 0.644
+      }
+    },
+    {
+      "file": "illum_mix_a135_00.png",
+      "category": "mix",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 122.556,
+        "equalize_and_binarize": 0.627
+      }
+    },
+    {
+      "file": "illum_mix_a180_00.png",
+      "category": "mix",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 120.601,
+        "equalize_and_binarize": 0.623
+      }
+    },
+    {
+      "file": "illum_mix_a225_00.png",
+      "category": "mix",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 138.279,
+        "equalize_and_binarize": 0.712
+      }
+    },
+    {
+      "file": "illum_mix_a270_00.png",
+      "category": "mix",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 129.202,
+        "equalize_and_binarize": 0.609
+      }
+    },
+    {
+      "file": "illum_mix_a315_00.png",
+      "category": "mix",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 123.158,
+        "equalize_and_binarize": 0.67
+      }
+    },
+    {
+      "file": "illum_shadow_a000_00.png",
+      "category": "shadow",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 117.665,
+        "equalize_and_binarize": 0.64
+      }
+    },
+    {
+      "file": "illum_shadow_a045_00.png",
+      "category": "shadow",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 121.771,
+        "equalize_and_binarize": 0.637
+      }
+    },
+    {
+      "file": "illum_shadow_a090_00.png",
+      "category": "shadow",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 104.24,
+        "equalize_and_binarize": 0.612
+      }
+    },
+    {
+      "file": "illum_shadow_a135_00.png",
+      "category": "shadow",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 122.348,
+        "equalize_and_binarize": 0.631
+      }
+    },
+    {
+      "file": "illum_shadow_a180_00.png",
+      "category": "shadow",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 112.55,
+        "equalize_and_binarize": 0.644
+      }
+    },
+    {
+      "file": "illum_shadow_a225_00.png",
+      "category": "shadow",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 128.738,
+        "equalize_and_binarize": 0.609
+      }
+    },
+    {
+      "file": "illum_shadow_a270_00.png",
+      "category": "shadow",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 105.782,
+        "equalize_and_binarize": 0.588
+      }
+    },
+    {
+      "file": "illum_shadow_a315_00.png",
+      "category": "shadow",
+      "module_px": 8.0,
+      "params": {
+        "module_px": 8.0,
+        "mean_filter_factor": 1.0,
+        "mean_filter_window": 9,
+        "closing_kernel": 25,
+        "adaptive_threshold_window": 25,
+        "scale_constant": 200.0,
+        "threshold_c": 0.0
+      },
+      "decode": {
+        "original": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "equalized": {
+          "success": true,
+          "text": "156+123+516+231"
+        },
+        "binary": {
+          "success": true,
+          "text": "156+123+516+231"
+        }
+      },
+      "timing_ms": {
+        "estimate": 123.628,
+        "equalize_and_binarize": 0.647
+      }
+    }
+  ]
+}

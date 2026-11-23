@@ -1,0 +1,46 @@
+{
+  "experiment": "estimator_compare",
+  "api_version": 1,
+  "dataset": {
+    "registry_key": "qr_samples",
+    "subsets": [
+      "tune_illum",
+      "tune_core",
+      "behavior_persp"
+    ],
+    "manifest": "layers/04_binarize/data/input/qr_samples/manifest.csv"
+  },
+  "variants": [
+    "scanline",
+    "canny_strict",
+    "canny_norm",
+    "canny_norm_round",
+    "canny_relaxed",
+    "hybrid"
+  ],
+  "decode": {
+    "backends": [
+      "cv2",
+      "wechat",
+      "zxing"
+    ],
+    "routes": [
+      "original",
+      "equalized",
+      "binary"
+    ]
+  },
+  "metrics": [
+    "module_error",
+    "fail",
+    "ambiguous",
+    "decode_union",
+    "decode_per_route",
+    "latency_p50_p95"
+  ],
+  "output": {
+    "save_intermediate_images": false,
+    "run_meta": true,
+    "per_image_csv": true
+  }
+}

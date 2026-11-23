@@ -1,0 +1,61 @@
+{
+  "experiment": "ablation",
+  "api_version": 1,
+  "dataset": {
+    "registry_key": "qr_samples",
+    "subsets": [
+      "tune_illum",
+      "tune_core"
+    ],
+    "manifest": "layers/04_binarize/data/input/qr_samples/manifest.csv"
+  },
+  "baseline": {
+    "estimator": "hybrid",
+    "denoise": "median3",
+    "mean_filter_factor": 1.0,
+    "close_factor": 3.0,
+    "scale_constant": 200.0,
+    "adaptive_c": 0.0
+  },
+  "factors": {
+    "denoise": [
+      "none",
+      "median3",
+      "bilateral",
+      "gaussian"
+    ],
+    "mean_filter_factor": [
+      1.0,
+      3.0
+    ],
+    "close_factor": [
+      2.0,
+      3.0,
+      4.0
+    ],
+    "scale_constant": [
+      180.0,
+      200.0,
+      220.0
+    ],
+    "adaptive_c": [
+      0.0,
+      3.0,
+      5.0
+    ]
+  },
+  "metrics": [
+    "module_error",
+    "decode_union",
+    "decode_per_route",
+    "psnr",
+    "ssim",
+    "latency_p50_p95",
+    "saturation_ratio"
+  ],
+  "output": {
+    "save_intermediate_images": false,
+    "run_meta": true,
+    "per_image_csv": true
+  }
+}
