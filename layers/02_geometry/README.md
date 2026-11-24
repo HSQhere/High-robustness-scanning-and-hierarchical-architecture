@@ -42,7 +42,9 @@ class IGeometry {
 
 ## 当前状态
 
-骨架。超分模型与是否启用 `[待确认]`。
+已提供可选的原尺寸裁切工具（`-DQRSCAN_ENABLE_GEOMETRY=ON`，默认关闭），不包含检测、超分或透视修补。公共入口为 `qrscan/geometry/crop.hpp`：01 已返回**原图坐标**时调用 `CropOriginal`；只有检测器仍给出缩放/填边图上的**像素中心坐标**时才用 `CropFromDetector`，传实际缩放后的内容矩形，不要再映射一次。归一化坐标和按像素边缘定义的检测输出需先由调用者转换。输入是顺时针凸四边形，角点顺序保持不变；缺候选返回 `kNotFound`，符号角已越出原图返回 `kInvalidInput`。裁切所需静区可夹至边界并标记 `clipped`，不合成缺失像素。
+
+结果在 `roi.status == kOk` 时包含独立的原分辨率 BGR 裁片、原图矩形及 `view_to_original`（裁片到原图）。下游如另做缩放或透视变换，应复合新的逆变换，不能直接将小图角点用于原图位置校验。检测失败时仍由上层决定是否全帧读取。构建后用 `ctest --test-dir build -R geometry_crop_contract --output-on-failure` 运行回归测试。
 
 ## 待确认
 
