@@ -48,7 +48,15 @@ class ITaskCodeValidator {
 
 ## 当前状态
 
-骨架。旧 `perception` 工程已有 WeChat/ZXing 实验代码，可迁移；新仓库尚未接入。
+本层可选构建单视图 C++ `WeChatDecoder`。它输出候选文本、输入视图坐标四角、源帧号、路线、状态与耗时，不计算未标定的置信度。`kSingle` 不表示合法任务码；非法候选不应阻止上层尝试其他路线。同一帧的三种视图只有一个源帧号。三帧放行、赛事校验与备选后端仍为草案，未改动 04 或默认流水线。
+
+```sh
+cmake -S . -B build-decode -DQRSCAN_ENABLE_WECHAT_DECODE=ON -DQRSCAN_WECHAT_MODEL_DIR=/path/to/wechat_models
+cmake --build build-decode
+ctest --test-dir build-decode --output-on-failure
+```
+
+应用构造 `qrscan::decode::WeChatDecoder(model_dir)` 时提供外置 `detect_2021nov`、`sr_2021nov` 的 `.prototxt` 与 `.caffemodel`，每个工作线程一个实例。CMake 的模型目录仅供可选真实模型冒烟测试使用，不写入库。没有模型或构建时缺少 `wechat_qrcode` 时有效图返回 `kBackendUnavailable`；空图/非 8 位单通道图返回 `kInvalidInput`。可用 `-DQRSCAN_USE_OPENCV_WECHAT=OFF` 测试无后端构建。未打包权重，不需要联网。
 
 ## 待确认
 

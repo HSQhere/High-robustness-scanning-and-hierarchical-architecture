@@ -69,3 +69,8 @@ target_compile_definitions(test_binarize PRIVATE
   QRSCAN_TEST_DATA_DIR="${CMAKE_CURRENT_SOURCE_DIR}/layers/04_binarize/data/input/qr_samples"
 )
 add_test(NAME binarize_tests COMMAND test_binarize)
+
+option(QRSCAN_ENABLE_WECHAT_DECODE "Build the optional single-view WeChat decoder" OFF)
+if(QRSCAN_ENABLE_WECHAT_DECODE)
+  add_subdirectory(layers/05_decode)
+endif()
